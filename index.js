@@ -9,7 +9,7 @@ function serial(list, iterator, callback) {
         var item = list.shift()
 
         if (!item) {
-            return
+            return callback(null)
         }
 
         iterator(item, loop)
