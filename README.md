@@ -4,7 +4,7 @@ Asynchronously operate over an array in order
 
 ## Example
 
-```
+```js
 var serial = require("in-order")
 
 serial([1, 2, 3], function (item, callback) {
