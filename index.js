@@ -1,7 +1,9 @@
 module.exports = serial
 
 function serial(list, iterator, callback) {
-    (function loop(err) {
+    list = list.slice()
+
+    ;(function loop(err) {
         if (err) {
             return callback && callback(err)
         }
